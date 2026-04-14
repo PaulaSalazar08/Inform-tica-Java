@@ -5,7 +5,7 @@ public class Circunferencia {
 	private float radio;
 	//CONSTRUCTOR
 	public Circunferencia(Punto Centro,float radio){
-		this.Centro=centro;
+		this.Centro=Centro;
 		this.radio=radio;  //Esto es una encapsulación, utilizar set y get para acceder a una clase
 	}
 	public Punto getCentro() {
@@ -22,6 +22,8 @@ public class Circunferencia {
 	}
 	public double getArea() {
 		double Area;
+		Area=3.1416*radio*radio;
+		return Area;
 	}
 	
 }
